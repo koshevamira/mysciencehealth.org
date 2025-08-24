@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Navigation</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #333;
+    }
+
+    nav {
+      background: #0d6efd;
+      padding: 12px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px 16px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background: #084298;
+      border-radius: 5px;
+    }
+
+    /* Dropdown */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      padding: 10px 0;
+      min-width: 260px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    nav ul li ul li a {
+      color: #333;
+      font-weight: normal;
+    }
+
+    nav ul li ul li a:hover {
+      background: #f0f0f0;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    /* Responsive */
+    @media(max-width: 900px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a>
+        <ul>
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Mission</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Health Care</a>
+        <ul>
+          <li><a href="#">General Info</a></li>
+          <li><a href="#">Prevention</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Baby</a>
+        <ul>
+          <li><a href="#">Complementary Feeding</a></li>
+          <li><a href="#">Development & Care</a></li>
+          <li><a href="#">Useful Information</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Women’s Health</a>
+        <ul>
+          <li><a href="#">Pregnancy & Breastfeeding</a></li>
+          <li><a href="#">Nutrition during Pregnancy</a></li>
+          <li><a href="#">Nutrition during Breastfeeding</a></li>
+          <li><a href="#">Hormonal Health</a></li>
+          <li><a href="#">Reproductive Health</a></li>
+          <li><a href="#">Menopause & Health after 40</a></li>
+          <li><a href="#">Prevention & Screenings</a></li>
+          <li><a href="#">Screening Calendar (30, 40, 50 y.)</a></li>
+          <li><a href="#">Monthly Cycle Calendar</a></li>
+          <li><a href="#">Ovulation Calculator</a></li>
+          <li><a href="#">Menstrual Calculator</a></li>
+          <li><a href="#">Useful Information</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Calculators</a>
+        <ul>
+          <li><a href="#">BMI Calculator</a></li>
+          <li><a href="#">Calories Calculator (BMR, TDEE)</a></li>
+          <li><a href="#">Macronutrients Calculator</a></li>
+          <li><a href="#">Water Intake Calculator</a></li>
+          <li><a href="#">Burned Calories Calculator (sports)</a></li>
+          <li><a href="#">Heart Rate Calculator</a></li>
+          <li><a href="#">Sleep Calculator</a></li>
+          <li><a href="#">Ovulation & Menstrual Calendar</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Mental Health & Stress</a>
+        <ul>
+          <li><a href="#">Useful Info</a></li>
+          <li><a href="#">Burnout</a></li>
+          <li><a href="#">Anxiety & Depression</a></li>
+          <li><a href="#">Stress & Mood Tests</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Sleep & Relaxation</a>
+        <ul>
+          <li><a href="#">Useful Info</a></li>
+          <li><a href="#">Sleep Calculator</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Heart Care</a>
+        <ul>
+          <li><a href="#">General Info</a></li>
+          <li><a href="#">Blood Pressure</a></li>
+          <li><a href="#">Cholesterol</a></li>
+          <li><a href="#">Diabetes & Metabolism</a></li>
+          <li><a href="#">Screening after 40</a></li>
+          <li><a href="#">Risk Factors</a></li>
+          <li><a href="#">Heart Rate Calculator</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Nutrition & Metabolism</a>
+        <ul>
+          <li><a href="#">Balanced Diet</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Nutrients</a></li>
+          <li><a href="#">Macronutrient Calculator</a></li>
+          <li><a href="#">Water Intake Calculator</a></li>
+          <li><a href="#">BMI Calculator</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Physical Activity & Sports</a>
+        <ul>
+          <li><a href="#">Workout</a></li>
+          <li><a href="#">Calories Calculator</a></li>
+          <li><a href="#">Burned Calories Calculator</a></li>
+          <li><a href="#">Heart Rate Calculator</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Rare Conditions</a>
+        <ul>
+          <li><a href="#">Educational Info on rare conditions</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main style="padding:20px;">
+    <h1>Welcome to Your Health Platform</h1>
+    <p>Explore science-based health information, calculators, and resources.</p>
+  </main>
+
+</body>
+</html>
